@@ -35,9 +35,12 @@ const NewsletterForm = () => {
         });
         setEmail('');
       } else {
+        // Handle specific error messages like "Email already exists"
         toast({
-          title: "Something went wrong",
-          description: "Please try again later.",
+          title: result.message.includes("already exists") ? 
+            "Already subscribed" : "Something went wrong",
+          description: result.message.includes("already exists") ? 
+            "This email is already on our list." : "Please try again later.",
           variant: "destructive",
         });
       }
