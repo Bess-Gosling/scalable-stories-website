@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -24,7 +24,13 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-coral-500 hover:bg-coral-600 text-white">
                 <a href="#newsletter" className="flex items-center gap-2">
-                  Join the early list <ArrowRight className="h-4 w-4" />
+                  <span className="flex items-center gap-1">✓ Add Me to the Early List</span>
+                </a>
+              </Button>
+              
+              <Button asChild size="lg" variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
+                <a href="#sample" className="flex items-center gap-2">
+                  <FileText className="h-4 w-4" /> View a Sample Newsletter
                 </a>
               </Button>
             </div>
