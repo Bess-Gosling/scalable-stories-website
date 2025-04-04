@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/components/ui/use-toast';
+import { submitEmailToSheet } from '@/utils/googleSheetsApi';
 
 const NewsletterForm = () => {
   const [email, setEmail] = useState('');
@@ -23,18 +24,23 @@ const NewsletterForm = () => {
     
     setLoading(true);
     
-    // Simulate API call
     try {
-      // Replace with actual API integration when ready
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const result = await submitEmailToSheet(email);
       
-      toast({
-        title: "Success!",
-        description: "You've been added to the Scalable Stories early access list!",
-        variant: "default",
-      });
-      
-      setEmail('');
+      if (result.success) {
+        toast({
+          title: "Success!",
+          description: "You've been added to the Scalable Stories early access list!",
+          variant: "default",
+        });
+        setEmail('');
+      } else {
+        toast({
+          title: "Something went wrong",
+          description: "Please try again later.",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
       toast({
         title: "Something went wrong",
