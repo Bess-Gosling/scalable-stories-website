@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Check, Zap, Layers, RefreshCw, Target } from 'lucide-react';
+import { Zap, Layers, RefreshCw, Target } from 'lucide-react';
 
 const featuresData = [
   {
@@ -35,17 +34,21 @@ const Features = () => {
             Just short, actionable emails that help you:
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {featuresData.map((feature, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:translate-y-[-2px]">
-              <div className="flex items-start gap-4">
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:translate-y-[-2px]"
+            >
+              <div className="flex items-center justify-center gap-4">
                 <div className="bg-coral-50 p-3 rounded-full">
                   {feature.icon}
                 </div>
                 <div>
-                  <div className="check-item">
-                    <Check className="h-5 w-5 text-coral-500 mt-0.5 flex-shrink-0" />
+                  {/* Removed Check icon but retained space */}
+                  <div className="flex items-start gap-2">
+                    <div className="w-5 h-5" /> {/* Empty spacer div */}
                     <h3 className="font-semibold text-lg">{feature.title}</h3>
                   </div>
                   <p className="text-muted-foreground ml-7">{feature.description}</p>

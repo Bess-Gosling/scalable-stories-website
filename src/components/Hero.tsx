@@ -11,7 +11,6 @@ const Hero = () => {
           <div className="md:col-span-7 animate-fade-in" style={{animationDelay: '0.2s'}}>
             <div className="mb-4 inline-block">
               <div className="px-3 py-1 text-sm font-medium bg-coral-50 text-coral-700 rounded-full">
-                Introducing Scalable Stories
               </div>
             </div>
             <h1 className="heading-xl mb-6">
@@ -36,7 +35,7 @@ const Hero = () => {
             </div>
             
             <div className="mt-8 text-sm text-muted-foreground">
-              <p>No hype. No overwhelm. Just actionable insights every week.</p>
+
             </div>
           </div>
 
