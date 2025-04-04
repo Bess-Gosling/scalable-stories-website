@@ -43,9 +43,9 @@ const Hero = () => {
           <div className="md:col-span-5 animate-fade-in" style={{animationDelay: '0.6s'}}>
             <div className="relative">
               <img 
-                src="/lovable-uploads/27155af5-b699-44df-bd14-4c7c27e2e2f1.png" 
+                src="/lovable-uploads/Hero-Founder-Image.png" 
                 alt="Solopreneur thinking about AI advice" 
-                className="w-full rounded-md shadow-lg"
+                className="w-full rounded-md"
               />
             </div>
           </div>
