@@ -6,6 +6,10 @@ const repoName = 'scalable-stories-website'; // replace with actual repo name
 
 export default defineConfig({
   base: `/${repoName}/`,
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
   server: {
     host: '::',
     port: 8080,

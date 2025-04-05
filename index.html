@@ -17,6 +17,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <script>
+      // Handle GitHub Pages direct URL access
+      if (location.pathname !== '/' && !location.pathname.startsWith('/scalable-stories-website/')) {
+        const redirect = '/scalable-stories-website/';
+        location.replace(redirect);
+      }
+    </script>
   </head>
 
   <body>
