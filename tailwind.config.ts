@@ -4,8 +4,6 @@ export default {
   darkMode: ["class"],
   content: [
     "./index.html",                // important for base template
-    "./src/**/*.{js,ts,jsx,tsx}",  // match all files under /src
-	"./src/index.css",
 	"./src/**/*.{js,ts,jsx,tsx,css}",
   ],
   prefix: "",
