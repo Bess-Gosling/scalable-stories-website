@@ -4,7 +4,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 
 const Hero = () => {
   // Calculate base path for assets
-  const basePath = import.meta.env.DEV ? '' : '/scalable-stories-website';
+  const basePath = '';
   
   return (
     <div className="relative overflow-hidden pt-16">

@@ -4,7 +4,8 @@ import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const basePath = import.meta.env.DEV ? '' : '/scalable-stories-website';
+
+  const basePath = '';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo + Title */}
           <Link to="/" className="flex items-center gap-x-2 hover:opacity-80 transition">
-            <img src={`${basePath}/favicon.ico`} alt="Logo" className="h-6 w-6" />
+            <img src={`${basePath}/logo.png`} alt="Logo" className="h-6 w-6" />
             <span className="text-xl font-bold text-coral-500">Scalable Stories</span>
           </Link>
 
