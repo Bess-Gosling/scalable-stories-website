@@ -18,8 +18,8 @@ const WhySection = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-5 rounded-lg border border-gray-100">
-                <div className="flex items-start gap-3 mb-2">
-                  <div className="bg-coral-100 text-coral-700 w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="bg-coral-100 text-coral-700 w-7 h-7 rounded-full flex items-center justify-center flex-shrink-">
                     <span className="font-medium">1</span>
                   </div>
                   <h4 className="font-semibold">Wearing all the hats?</h4>
@@ -30,7 +30,7 @@ const WhySection = () => {
               </div>
               
               <div className="bg-white p-5 rounded-lg border border-gray-100">
-                <div className="flex items-start gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-2">
                   <div className="bg-coral-100 text-coral-700 w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="font-medium">2</span>
                   </div>
@@ -42,7 +42,7 @@ const WhySection = () => {
               </div>
               
               <div className="bg-white p-5 rounded-lg border border-gray-100">
-                <div className="flex items-start gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-2">
                   <div className="bg-coral-100 text-coral-700 w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="font-medium">3</span>
                   </div>
@@ -54,7 +54,7 @@ const WhySection = () => {
               </div>
               
               <div className="bg-white p-5 rounded-lg border border-gray-100">
-                <div className="flex items-start gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-2">
                   <div className="bg-coral-100 text-coral-700 w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="font-medium">4</span>
                   </div>
