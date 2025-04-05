@@ -1,39 +1,57 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const basePath = import.meta.env.DEV ? '' : '/scalable-stories-website';
-  
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 10);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
   return (
-    <nav className={`fixed top-0 w-full z-30 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
+    <header
+      className={`fixed top-0 w-full z-30 transition-all duration-300 ${
+        scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-        <div className="flex items-center gap-x-2 justify-center md:justify-start">
-          <img src={`${basePath}/favicon.ico`} alt="Logo" className="h-6 w-6" />
-          <span className="text-xl font-bold text-coral-500">Scalable Stories</span>
-        </div>
-          <div>
-            <Button asChild size="sm" variant="outline" className="mr-2 border-coral-500 text-coral-500 hover:bg-coral-50">
+          {/* Logo + Title */}
+          <Link to="/" className="flex items-center gap-x-2 hover:opacity-80 transition">
+            <img src={`${basePath}/favicon.ico`} alt="Logo" className="h-6 w-6" />
+            <span className="text-xl font-bold text-coral-500">Scalable Stories</span>
+          </Link>
+
+          {/* Nav Buttons (Resources + CTA) */}
+          <div className="flex items-center gap-2">
+            <Button
+              asChild
+              size="sm"
+              variant="outline"
+              className="border-coral-500 text-coral-500 hover:bg-coral-50"
+            >
+              <Link to="/resources">Resources</Link>
+            </Button>
+
+            <Button
+              asChild
+              size="sm"
+              variant="outline"
+              className="border-coral-500 text-coral-500 hover:bg-coral-50"
+            >
               <a href="#newsletter">Join Newsletter</a>
             </Button>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

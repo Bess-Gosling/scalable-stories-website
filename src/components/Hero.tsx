@@ -31,6 +31,7 @@ const Hero = () => {
               
               <Button asChild size="lg" variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
               <a
+              //Newsletter Sample PDF
                 href={`${basePath}/lovable-uploads/2025 Dream Life.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -4,25 +4,35 @@ import { Input } from '@/components/ui/input';
 import { useToast } from '@/components/ui/use-toast';
 import { submitEmailToSupabase } from '@/utils/submitToSupabase';
 
+// Validation helpers
+const isValidName = (name: string) => /^[A-Za-z\s'-]{1,50}$/.test(name.trim());
+const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
 const NewsletterForm = () => {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
+  const [botField, setBotField] = useState(''); // honeypot
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!firstName.trim()) {
+    if (botField) {
+      // Silent fail — likely a bot
+      return;
+    }
+
+    if (!isValidName(firstName)) {
       toast({
-        title: "First name is required",
-        description: "Please enter your first name.",
+        title: "Invalid name",
+        description: "Please enter a valid first name.",
         variant: "destructive",
       });
       return;
     }
 
-    if (!email || !email.includes('@')) {
+    if (!isValidEmail(email)) {
       toast({
         title: "Invalid email",
         description: "Please enter a valid email address.",
@@ -34,7 +44,7 @@ const NewsletterForm = () => {
     setLoading(true);
 
     try {
-      const result = await submitEmailToSupabase(email, firstName);
+      const result = await submitEmailToSupabase(email.trim(), firstName.trim());
 
       if (result.success) {
         toast({
@@ -103,12 +113,24 @@ const NewsletterForm = () => {
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Honeypot (hidden field) */}
+                  <input
+                    type="text"
+                    name="company"
+                    className="hidden"
+                    autoComplete="off"
+                    value={botField}
+                    onChange={(e) => setBotField(e.target.value)}
+                    tabIndex={-1}
+                  />
+
                   <Input
                     type="text"
                     placeholder="First name"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     required
+                    maxLength={50}
                     className="w-full rounded-md border-gray-300 focus:border-coral-500 focus:ring focus:ring-coral-200 focus:ring-opacity-50"
                   />
                   <Input
@@ -117,6 +139,7 @@ const NewsletterForm = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
+                    maxLength={254}
                     className="w-full rounded-md border-gray-300 focus:border-coral-500 focus:ring focus:ring-coral-200 focus:ring-opacity-50"
                   />
                   <Button
