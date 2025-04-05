@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
-const repoName = 'your-repo-name'; // replace with actual repo name
+const repoName = 'sustainable-stories-website'; // replace with actual repo name
 
 export default defineConfig({
   base: `/${repoName}/`,
