@@ -7,6 +7,7 @@ const App = () => (
   <Routes>
     <Route path="/" element={<Index />} />
     <Route path="*" element={<NotFound />} />
+    console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL);
   </Routes>
 );
 

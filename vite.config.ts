@@ -2,12 +2,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
-// Pull from .env at build time
-const supabaseUrl = process.env.VITE_SUPABASE_URL || '';
-const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY || '';
-
 export default defineConfig({
-  base: '/scalable-stories-website/', // GitHub Pages repo name
+  base: '/scalable-stories-website/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,

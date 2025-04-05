@@ -4,7 +4,6 @@ import { ArrowRight, FileText } from 'lucide-react';
 
 const Hero = () => {
   // Calculate base path for assets
-  console.log("🔥Hero Component Rendered");
   const basePath = import.meta.env.DEV ? '' : '/scalable-stories-website';
   
   return (
