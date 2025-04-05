@@ -1,9 +1,12 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, FileText } from 'lucide-react';
 
 const Hero = () => {
+  // Calculate base path for assets
+  console.log("🔥Hero Component Rendered");
+  const basePath = import.meta.env.DEV ? '' : '/scalable-stories-website';
+  
   return (
     <div className="relative overflow-hidden pt-16">
       <div className="section-container pt-10 md:pt-24">
@@ -29,7 +32,7 @@ const Hero = () => {
               
               <Button asChild size="lg" variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
               <a
-                href="/lovable-uploads/2025 Dream Life.pdf"
+                href={`${basePath}/lovable-uploads/2025 Dream Life.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -47,7 +50,7 @@ const Hero = () => {
           <div className="md:col-span-5 animate-fade-in" style={{animationDelay: '0.6s'}}>
             <div className="relative">
               <img 
-                src="/lovable-uploads/Hero-Founder-Image.png" 
+                src={`${basePath}/lovable-uploads/Hero-Founder-Image.png`}
                 alt="Solopreneur thinking about AI advice" 
                 className="w-full rounded-md"
               />
