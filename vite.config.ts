@@ -2,10 +2,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
-const repoName = 'scalable-stories-website'; // replace with actual repo name
-
 export default defineConfig({
-  base: `/${repoName}/`,
+  base: `/scalable-stories-website/`,
   build: {
     outDir: 'dist',
     emptyOutDir: true,
