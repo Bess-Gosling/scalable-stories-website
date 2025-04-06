@@ -26,20 +26,20 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo + Title */}
           <Link to="/" className="flex items-center gap-x-2 hover:opacity-80 transition">
-            <img src={`${basePath}/logo.png`} alt="Logo" className="h-6 w-6" />
+            <img src={`${basePath}/logo.svg`} alt="Logo" className="h-6 w-6" />
             <span className="text-xl font-bold text-coral-500">Scalable Stories</span>
           </Link>
 
           {/* Nav Buttons (Resources + CTA) */}
           <div className="flex items-center gap-2">
-            <Button
+            {/*<Button
               asChild
               size="sm"
               variant="outline"
               className="border-coral-500 text-coral-500 hover:bg-coral-50"
             >
               <Link to="/resources">Resources</Link>
-            </Button>
+            </Button> */}
 
             <Button
               asChild

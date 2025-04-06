@@ -8,7 +8,7 @@ import './index.css';
 const App = () => (
   <Routes>
     <Route path="/" element={<Index />} />
-    <Route path="/resources" element={<DuctTapeResourceLibrary />} />
+    {/* <Route path="/resources" element={<DuctTapeResourceLibrary />} /> */}
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
