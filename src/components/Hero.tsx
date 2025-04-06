@@ -19,7 +19,7 @@ const Hero = () => {
               What If You Got <span className="text-coral-600 relative">AI Advice</span> That Actually Fit <span className="italic">Your Business</span>?
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              A weekly newsletter built just for solopreneurs who want to work smarter, not harder—with the help of AI, smart workflows, and zero BS.
+            A weekly newsletter for solopreneurs who want to ditch the overwhelm and build faster — with AI, smart systems, and advice that actually makes sense.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -32,7 +32,7 @@ const Hero = () => {
               <Button asChild size="lg" variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
               <a
               //Newsletter Sample PDF
-                href={`${basePath}/lovable-uploads/2025 Dream Life.pdf`}
+                href={`${basePath}/lovable-uploads/Newsletter-Sample.pdf`} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

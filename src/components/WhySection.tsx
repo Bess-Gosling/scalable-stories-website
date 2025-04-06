@@ -70,7 +70,7 @@ const WhySection = () => {
           <div className="text-center">
             <h3 className="heading-md mb-4">Get Clarity. Save Time. Build Smarter.</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              Weekly emails that cut the fluff and give you step-by-step, actionable ideas to work less and earn more—powered by AI.
+              Weekly emails that cut the fluff and give you step-by-step, actionable ideas to work less and earn more — powered by AI.
             </p>
           </div>
         </div>
