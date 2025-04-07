@@ -150,7 +150,16 @@ const NewsletterForm = () => {
                     {loading ? "Joining..." : "Join the Smart List"}
                   </Button>
                   <p className="text-xs text-muted-foreground text-center">
-                    No spam. Just simple, smart emails—and first dibs when we launch new tools.
+                  By submitting this form, you consent to your information being processed via our third-party providers,{' '}
+                  <a href="https://www.beehiiv.com" target="_blank" className="underline text-coral-600 hover:text-coral-500">beehiiv</a>{' '}
+                  and{' '}
+                  <a href="https://supabase.com" target="_blank" className="underline text-coral-600 hover:text-coral-500">Supabase</a>, and agree to beehiiv's{' '}
+                  <a href="https://www.beehiiv.com/terms" target="_blank" className="underline text-coral-600 hover:text-coral-500">Terms of Use</a>{' '}
+                  and{' '}
+                  <a href="https://www.beehiiv.com/privacy" target="_blank" className="underline text-coral-600 hover:text-coral-500">Privacy Policy</a>, as well as{' '}
+                  <a href="https://supabase.com/terms" target="_blank" className="underline text-coral-600 hover:text-coral-500">Supabase's Terms</a>{' '}
+                  and{' '}
+                  <a href="https://supabase.com/privacy" target="_blank" className="underline text-coral-600 hover:text-coral-500">Privacy Policy</a>.
                   </p>
                 </form>
               </div>
