@@ -69,12 +69,33 @@ const NewsletterForm = () => {
                 />
 
                 <p className="text-xs text-muted-foreground text-center mt-4">
-                  Powered by&nbsp;
-                  <a href="https://beehiiv.com" target="_blank" className="underline text-coral-600 hover:text-coral-500">
-                    beehiiv
-                  </a>
-                  &nbsp;– no spam, just smart AI content for solopreneurs.
+                  By subscribing, you consent to receive emails from Scalable Stories via{' '}
+                  <a
+                    href="https://www.beehiiv.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-coral-600 hover:text-coral-500"
+                  >
+                    Beehiiv
+                  </a>, and agree to their{' '}
+                  <a
+                    href="https://www.beehiiv.com/terms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-coral-600 hover:text-coral-500"
+                  >
+                    Terms of Service
+                  </a> and{' '}
+                  <a
+                    href="https://www.beehiiv.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-coral-600 hover:text-coral-500"
+                  >
+                    Privacy Policy
+                  </a>.
                 </p>
+
               </div>
             </div>
           </div>
