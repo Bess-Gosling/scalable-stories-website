@@ -79,14 +79,6 @@ const NewsletterForm = () => {
                     Beehiiv
                   </a>, and agree to their{' '}
                   <a
-                    href="https://www.beehiiv.com/terms"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline text-coral-600 hover:text-coral-500"
-                  >
-                    Terms of Service
-                  </a> and{' '}
-                  <a
                     href="https://www.beehiiv.com/privacy"
                     target="_blank"
                     rel="noopener noreferrer"
