@@ -6,6 +6,7 @@ import Features from '@/components/Features';
 import WhySection from '@/components/WhySection';
 import NewsletterForm from '@/components/NewsletterForm';
 import Footer from '@/components/Footer';
+import FreeResources from '@/components/FreeResourcesVault';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
         <Hero />
         <Features />
         <WhySection />
+        <FreeResources />
         <NewsletterForm />
       </main>
       <Footer />

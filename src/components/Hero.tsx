@@ -1,61 +1,25 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, FileText } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-  // Calculate base path for assets
   const basePath = '';
-  
+
   return (
-    <div className="relative overflow-hidden pt-16">
-      <div className="section-container pt-10 md:pt-24">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-7 animate-fade-in" style={{animationDelay: '0.2s'}}>
-            <div className="mb-4 inline-block">
-              <div className="px-3 py-1 text-sm font-medium bg-white-50 text-white-700 rounded-full">
-              </div>
-            </div>
-            <h1 className="heading-xl mb-6">
-              What If You Got <span className="text-coral-600 relative">AI Advice</span> That Actually Fit <span className="italic">Your Business</span>?
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-            A weekly newsletter for solopreneurs who want to ditch the overwhelm and build faster — with AI, smart systems, and advice that actually makes sense.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-coral-600 hover:bg-coral-500 text-white">
-                <a href="#newsletter" className="flex items-center gap-2">
-                  <span className="flex items-center gap-1">✓ Add Me to the Early List</span>
-                </a>
-              </Button>
-              
-              <Button asChild size="lg" variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
-              <a
-              //Newsletter Sample PDF
-                href={`${basePath}/lovable-uploads/Newsletter-Sample.pdf`} 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <FileText className="h-4 w-4" /> View a Sample Newsletter
-              </a>
-            </Button>
-
-            </div>
-            
-            <div className="mt-8 text-sm text-muted-foreground">
-            </div>
-          </div>
-
-          <div className="md:col-span-5 animate-fade-in" style={{animationDelay: '0.6s'}}>
-            <div className="relative">
-              <img 
-                src={`${basePath}/lovable-uploads/Hero-Founder-Image.png`}
-                alt="Solopreneur thinking about AI advice" 
-                className="w-full rounded-md"
-              />
-            </div>
-          </div>
+    <div className="relative overflow-hidden pt-20 pb-16 bg-white">
+      <div className="section-container text-center">
+        <h1 className="heading-xl mb-6 max-w-4xl mx-auto">
+          Build Smarter. Work Less. Scale Faster — <span className="text-coral-600">with AI that Fits Your Flow.</span>
+        </h1>
+        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          Weekly action steps, smart automations, and simple frameworks to scale your business without burnout.
+        </p>
+        <div className="flex justify-center">
+          <Button asChild size="lg" className="inline-flex items-center justify-center gap-2 rounded-md bg-coral-600 hover:bg-coral-500 text-white font-semibold text-base px-8 py-4 transition-colors">
+            <a href="#newsletter" className="flex items-center gap-2">
+              <ArrowRight className="h-5 w-5" /> Join Scalable Stories (Free)
+            </a>
+          </Button>
         </div>
       </div>
     </div>

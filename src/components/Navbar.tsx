@@ -32,14 +32,14 @@ const Navbar = () => {
 
           {/* Nav Buttons (Resources + CTA) */}
           <div className="flex items-center gap-2">
-            {/*<Button
+            {<Button
               asChild
               size="sm"
               variant="outline"
               className="border-coral-500 text-coral-500 hover:bg-coral-50"
             >
               <Link to="/resources">Resources</Link>
-            </Button> */}
+            </Button> }
 
             <Button
               asChild
