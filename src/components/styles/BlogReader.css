@@ -1,0 +1,126 @@
+/* === Blog Reader Styling === */
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .blog-date {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-tag {
+    background-color: #fb6f66;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .blog-markdown-content {
+    max-width: 768px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1f2937;
+  }
+  
+  .blog-markdown-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .blog-markdown-content p {
+    margin-bottom: 1.25rem;
+  }
+  
+  .blog-markdown-content ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* === Code & Prompt Blocks === */
+  
+  .code-block,
+  .prompt-block {
+    background-color: #fff5f2;
+    border: 1px solid #fbc4b6;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.75rem 0;
+    position: relative;
+    overflow: auto;
+  }
+  
+  .code-block pre,
+  .code-block code,
+  .prompt-block pre,
+  .prompt-block code {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Prompt specific styling */
+  .prompt-text {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #3a3a3a;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  
+  /* === Copy Button === */
+  .blog-copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: #ffd9cf;
+    color: #6b4c47;
+    border: none;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-copy-btn:hover {
+    background-color: #fbc4b6;
+  }
+  
+  /* === Quote Styling (Coral Inspired) === */
+  .blog-markdown-content blockquote {
+    font-style: italic;
+    border-left: 4px solid #f99789;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #654744;
+    background-color: #fff0ec;
+    border-radius: 0.25rem;
+  }
+  

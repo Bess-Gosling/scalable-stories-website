@@ -10,7 +10,7 @@ const NewsletterForm = () => {
               Join Scalable Stories (Free)
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Actionable weekly emails + instant access to your Founder Vault.
+              Actionable weekly emails.
             </p>
 
             {/* Centered Beehiiv Embed Form */}

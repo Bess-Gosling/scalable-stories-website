@@ -1,0 +1,66 @@
+/* === Product Grid Styling === */
+
+.product-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 20px;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .section-description {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* === Product Grid === */
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #f0d3d8;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(249, 168, 212, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(249, 168, 212, 0.15);
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .product-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #222;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+  }
+  
