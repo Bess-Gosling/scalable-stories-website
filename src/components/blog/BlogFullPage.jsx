@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { marked } from "marked";
 import matter from "gray-matter";
 import "../styles/ResourceLibrary.css";
-import "../styles/ProductFullPage.css";
+import "../styles/BlogReader.css";
 
 const allPosts = import.meta.glob("../blog/content/*.md", {
   query: "?raw",
@@ -87,7 +87,7 @@ export default function ResourceDetailPage() {
         transition={{ duration: 0.4, ease: "easeOut" }}
       >
         <motion.button
-          onClick={() => navigate("/resources")}
+          onClick={() => navigate("/blog")}
           className="back-button"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
