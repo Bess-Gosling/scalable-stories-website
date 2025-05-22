@@ -41,7 +41,6 @@ const Navbar = () => {
             >
               <Link to="/blog">Blog</Link>
             </Button> }
-            
 
             <Button
               asChild

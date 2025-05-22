@@ -20,10 +20,8 @@ export default function Footer() {
             Explore
           </h4>
           <ul className="space-y-2 text-sm text-gray-700">
-            <li><Link to="/resources" className="hover:text-coral-600">Library</Link></li>
-            <li><Link to="/products" className="hover:text-coral-600">Downloads</Link></li>
-            <li><Link to="/about" className="hover:text-coral-600">About</Link></li>
-            <li><Link to="/contact" className="hover:text-coral-600">Contact</Link></li>
+            <li><Link to="/blog" className="hover:text-coral-600">Blog</Link></li>
+            {/*<li><Link to="/products" className="hover:text-coral-600">Downloads</Link></li>*/}
           </ul>
         </div>
 

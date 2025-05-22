@@ -19,7 +19,7 @@ const products = [
       slug: "repurpose-workflow",
       title: "Content Repurposing Workflow",
       description: "Turn one long-form blog into five+ content assets across multiple platforms using this Notion-based workflow.",
-      downloadUrl: "https://example.com/content-repurpose-workflow.pdf",
+      downloadUrl: "/",
       image: "/assets/products/repurpose-workflow-thumbnail.png",
       tags: ["content", "workflow", "notion"],
     }

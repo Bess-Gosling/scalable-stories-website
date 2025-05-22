@@ -65,7 +65,7 @@
   .back-button {
     background: none;
     border: none;
-    color: #E9204E;
+    color: #FF4015; /* coral */
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
@@ -74,8 +74,9 @@
   }
   
   .back-button:hover {
-    color: #C71C44;
+    color: #FF6847; /* lighter coral on hover */
   }
+  
   
   .resource-content {
     background: white;
